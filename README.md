@@ -46,22 +46,31 @@ repeticao ::= enquanto ( expressao ) comando | faça comando enquanto ( expressa
 
 # Tabela de tokens
 
-| Token         | Nome              | Tipo de Atributo |
-|---------------|-------------------|------------------|
-| ;             | Ponto e vírgula   | Nenhum           |
-| int           | Palavra reservada | Tipo de dado     |
-| float         | Palavra reservada | Tipo de dado     |
-| char          | Palavra reservada | Tipo de dado     |
-| [a-zA-Z]      | Identificador     | String           |
-| [0-9]+        | Inteiro           | Inteiro          |
-| - [0-9]+      | Inteiro           | Inteiro          |
-| [0-9]*\.[0-9]+ | Flutuante         | Flutuante        |
-| [0-9]+E[-+]?[0-9]+ | Flutuante      | Flutuante        |
-| '[a-zA-Z0-9]' | Char              | Char             |
-| +             | Operador          | Nenhum           |
-| -             | Operador          | Nenhum           |
-| *             | Operador          | Nenhum           |
-| /             | Operador          | Nenhum           |
-| if            | Palavra reservada | Nenhum           |
-| (             | Parêntese         | Nenhum           |
-| )             | Parêntese         | Nenhum           |
+| Token           | Atributo                           | Tipo        |
+|----------------|-----------------------------------|-------------|
+| int            | -                                 | palavra     |
+| float          | -                                 | palavra     |
+| char           | -                                 | palavra     |
+| if             | -                                 | palavra     |
+| while          | -                                 | palavra     |
+| do             | -                                 | palavra     |
+| repeat         | -                                 | palavra     |
+| until          | -                                 | palavra     |
+| identificador  | nome do identificador              | cadeia      |
+| inteiro        | valor do número inteiro            | inteiro     |
+| flutuante      | valor do número de ponto flutuante | flutuante   |
+| caractere      | valor do caractere                 | caractere   |
+| +              | -                                 | operador    |
+| -              | -                                 | operador    |
+| *              | -                                 | operador    |
+| /              | -                                 | operador    |
+| =              | -                                 | operador    |
+| ==             | -                                 | operador    |
+| <              | -                                 | operador    |
+| >              | -                                 | operador    |
+| <=             | -                                 | operador    |
+| >=             | -                                 | operador    |
+| (              | -                                 | delimitador |
+| )              | -                                 | delimitador |
+| ;              | -                                 | delimitador |
+| /.../              | comentario                                 | string |
