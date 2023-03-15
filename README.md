@@ -2,7 +2,7 @@
 Trabalho para a disciplina de construção de compiladores
 
 
-#Tabela de tokens
+# Tabela de tokens
 
 | Token         | Nome              | Tipo de Atributo |
 |---------------|-------------------|------------------|
