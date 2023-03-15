@@ -48,14 +48,14 @@ repeticao ::= enquanto ( expressao ) comando | faça comando enquanto ( expressa
 
 | Token           | Atributo                           | Tipo        |
 |----------------|-----------------------------------|-------------|
-| int            | -                                 | palavra     |
-| float          | -                                 | palavra     |
-| char           | -                                 | palavra     |
-| se             | -                                 | palavra     |
-| enquanto          | -                                 | palavra     |
-| faça             | -                                 | palavra     |
-| repita         | -                                 | palavra     |
-| até          | -                                 | palavra     |
+| int            | -                                 | palavra reservada     |
+| float          | -                                 | palavra reservada     |
+| char           | -                                 | palavra reservada     |
+| se             | -                                 | palavra reservada     |
+| enquanto          | -                                 | palavra reservada     |
+| faça             | -                                 | palavra reservada     |
+| repita         | -                                 | palavra reservada     |
+| até          | -                                 | palavra reservada     |
 | identificador  | nome do identificador              | cadeia      |
 | inteiro        | valor do número inteiro            | inteiro     |
 | flutuante      | valor do número de ponto flutuante | flutuante   |
@@ -72,5 +72,7 @@ repeticao ::= enquanto ( expressao ) comando | faça comando enquanto ( expressa
 | >=             | -                                 | operador    |
 | (              | -                                 | delimitador |
 | )              | -                                 | delimitador |
+| {              | -                                 | delimitador |
+| }              | -                                 | delimitador |
 | ;              | -                                 | delimitador |
 | /.../              | comentario                                 | string |
