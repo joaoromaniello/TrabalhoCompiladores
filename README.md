@@ -1,5 +1,8 @@
-# TrabalhoCompiladores
+# Trabalho de Compiladores
 Trabalho para a disciplina de construção de compiladores
+
+
+#Tabela de tokens
 
 | Token         | Nome              | Tipo de Atributo |
 |---------------|-------------------|------------------|
