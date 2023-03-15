@@ -4,8 +4,6 @@ Trabalho para a disciplina de construção de compiladores
 
 # GLC Inicial
 
-GLC para aritmética básica: 
-
 
 programa ::= declaracoes comandos
 
@@ -19,7 +17,7 @@ identificador ::= [a-zA-Z][a-zA-Z0-9]*
 
 comandos ::= comando | comandos comando
 
-comando ::= atribuicao | condicional
+comando ::= atribuicao | condicional | repeticao
 
 atribuicao ::= identificador = expressao ;
 
@@ -31,15 +29,20 @@ fator ::= identificador | numero | ( expressao )
 
 numero ::= inteiro | flutuante | char
 
-inteiro ::= [0-9]* | -[0-9]* (Permite tanto positivo quanto negativo)
+inteiro ::= [0-9]* | - [0-9]*
 
-flutuante ::= [0-9]+.[0-9]+(E[-+][0-9]) | -[0-9]+.[0-9]+(E[-+][0-9])
+flutuante ::= [0-9].[0-9]+(E[-+]?[0-9]+)? | -[0-9].[0-9]+(E[-+]?[0-9]+)?
 
 char ::= '[a-z| A-Z | 0-9]*'
 
 operador ::= + | - | * | /
 
-condicional ::= if ( expressao ) comando
+condicional ::= if ( expressao ) comando | if ( expressao ) comando else comando
+
+repeticao ::= enquanto ( expressao ) comando | faça comando enquanto ( expressao ) | repita comando até ( expressao )
+
+
+==============
 
 # Tabela de tokens
 
