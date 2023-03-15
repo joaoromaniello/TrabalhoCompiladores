@@ -7,40 +7,39 @@ Trabalho para a disciplina de construção de compiladores
 GLC para aritmética básica: 
 
 
-<programa> ::= <declaracoes> <comandos>
+programa ::= declaracoes comandos
 
-<declaracoes> ::= <declaracao> | <declaracoes> <declaracao>
+declaracoes ::= declaracao | declaracoes declaracao
 
-<declaracao> ::= <tipo> <identificador> ;
+declaracao ::= tipo identificador ;
 
-<tipo> ::= int | float | char
+tipo ::= int | float | char
 
-<identificador> ::= [a-zA-Z][a-zA-Z0-9]*
+identificador ::= [a-zA-Z][a-zA-Z0-9]*
 
-<comandos> ::= <comando> | <comandos> <comando>
+comandos ::= comando | comandos comando
 
-<comando> ::= <atribuicao> | <condicional>
+comando ::= atribuicao | condicional
 
-<atribuicao> ::= <identificador> = <expressao> ;
+atribuicao ::= identificador = expressao ;
 
-<expressao> ::= <termo> | <expressao> <operador> <termo> | ( <expressao> )
+expressao ::= termo | expressao operador termo | ( expressao )
 
-<termo> ::= <fator> | <termo> <operador> <fator>
+termo ::= fator | termo operador fator
 
-<fator> ::= <identificador> | <numero> | ( <expressao> )
+fator ::= identificador | numero | ( expressao )
 
-<numero> ::= <inteiro> | <flutuante> | <char>
+numero ::= inteiro | flutuante | char
 
-<inteiro> ::= [0-9]* | - [0-9]*  (Permite tanto positivo quanto negativo)
+inteiro ::= [0-9]* | -[0-9]* (Permite tanto positivo quanto negativo)
 
-<flutuante> ::= [0-9]* +.[0-9]+(E[-+] + [0-9]) | - [0-9]* +.[0-9]+(E[-+] + [0-9]) 
+flutuante ::= [0-9]+.[0-9]+(E[-+][0-9]) | -[0-9]+.[0-9]+(E[-+][0-9])
 
-<char> ::= '[a-z| A-Z | 0-9]*'
+char ::= '[a-z| A-Z | 0-9]*'
 
-<operador> ::= + | - | * | /
+operador ::= + | - | * | /
 
-<condicional> ::= if ( <expressao> ) <comando>
-
+condicional ::= if ( expressao ) comando
 
 # Tabela de tokens
 
