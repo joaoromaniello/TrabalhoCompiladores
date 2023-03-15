@@ -51,11 +51,11 @@ repeticao ::= enquanto ( expressao ) comando | faça comando enquanto ( expressa
 | int            | -                                 | palavra     |
 | float          | -                                 | palavra     |
 | char           | -                                 | palavra     |
-| if             | -                                 | palavra     |
-| while          | -                                 | palavra     |
-| do             | -                                 | palavra     |
-| repeat         | -                                 | palavra     |
-| until          | -                                 | palavra     |
+| se             | -                                 | palavra     |
+| enquanto          | -                                 | palavra     |
+| faça             | -                                 | palavra     |
+| repita         | -                                 | palavra     |
+| até          | -                                 | palavra     |
 | identificador  | nome do identificador              | cadeia      |
 | inteiro        | valor do número inteiro            | inteiro     |
 | flutuante      | valor do número de ponto flutuante | flutuante   |
