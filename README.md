@@ -1,5 +1,5 @@
 # Trabalho de Compiladores
-Trabalho para a disciplina de construção de compiladores
+Este é um repositório do trabalho realizado para a disciplina de Construção de Compiladores na Universidade Federal de Uberlândia. Nosso objetivo é desenvolver um compilador que possa realizar as funções básicas da linguagem de programação definida em nossa gramática.
 
 
 # GLC Inicial
