@@ -27,7 +27,7 @@ termo ::= fator | termo operador fator
 
 fator ::= identificador | numero | ( expressao )
 
-numero ::= inteiro | flutuante | char
+numero ::= inteiro | flutuante
 
 inteiro ::= [0-9]* | - [0-9]*
 
